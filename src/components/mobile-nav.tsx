@@ -10,6 +10,8 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Menu } from "lucide-react";
+import Image from "next/image";
+import { siteLogo } from "@/public/images";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -34,6 +36,7 @@ export function MobileNav() {
           <span className="sr-only">Toggle Menu</span>
         </Button>
       </DrawerTrigger>
+      <Image src={siteLogo} alt="Main logo" className="h-14 w-auto object-contain md:hidden" />
       <DrawerContent className="max-h-[60svh] p-0">
         <div className="overflow-auto p-6">
           <div className="flex flex-col space-y-3">

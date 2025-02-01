@@ -4,3 +4,4 @@ export { default as image3 } from "@/public/images/3.svg";
 export { default as image4 } from "@/public/images/4.svg";
 export { default as image5 } from "@/public/images/5.svg";
 export { default as image6 } from "@/public/images/6.svg";
+export { default as siteLogo } from "@/public/images/opexn_logo.png";
